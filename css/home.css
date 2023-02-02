@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
 
-@import url(./common.css);
+@import "./common.css";
 
 * {
   font-family: "Sen", sans-serif;
@@ -10,14 +10,9 @@
 
 :root {
   --main-color: #ffffff;
-  --red-color: red;
   --btn-color: #ffd050;
-  --btn-hower-color: #edc14a;
   --blak-color: #232536;
   --grey-color: #6d6e76;
-  --light-grey: #f4f4f4;
-  --light-yellow: #fbf6ea;
-  --trans-05: all 0.5s ease;
 }
 
 ul {
@@ -37,7 +32,7 @@ nav {
   height: 80px;
   align-items: center;
   justify-content: space-between;
-  transition: var(--trans-05);
+  transition: 0.5s;
 }
 
 .navbar-shrink {
@@ -55,7 +50,7 @@ nav {
   margin: 0 12px;
   line-height: 28px;
   color: var(--main-color);
-  transition: var(--trans-05);
+  transition: 0.5s;
 }
 
 .nav li a:hover {
@@ -73,7 +68,7 @@ nav {
   border: 1px solid var(--main-color);
   line-height: 24px;
   color: var(--blak-color);
-  transition: var(--trans-05);
+  transition: 0.5s;
 }
 
 .nav li button:hover {
@@ -82,7 +77,7 @@ nav {
 }
 
 #navbar-open i {
-  color: var(--main-color);
+  color: white;
   font-size: 40px;
 }
 #navbar-open {
@@ -97,10 +92,10 @@ nav {
   bottom: 0;
   z-index: 10;
   left: -100%;
-  background-color: var(--main-color);
+  background-color: white;
   width: 100%;
   text-align: center;
-  transition: var(--trans-05);
+  transition: 0.5s;
 }
 
 #navbar-close {
@@ -108,9 +103,9 @@ nav {
   border: none;
 }
 #navbar-close i {
-  background-color: var(--red-color);
+  background-color: red;
   font-size: 30px;
-  color: var(--main-color);
+  color: whitesmoke;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -146,118 +141,128 @@ nav {
 
 /* --End navbar-- */
 
-/* author section */
+/* ---Start home section --  */
 
-#author-section {
-  display: inline-block;
-  height: 776px;
-  margin-top: 91px;
-}
-.authors-info {
-  text-align: center;
-}
-.authors-info h3 {
-  font-family: "Sen";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -2px;
-  color: var(--blak-color);
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 32px;
-  margin-top: 48px;
-}
-.card {
-  background-color: var(--light-grey);
-}
-.card:hover {
-  background-color: var(--light-yellow);
-  transition: var(--trans-05);
-}
-.image {
-  margin: 40px 84px 20px 84px;
-  width: 100%;
+.home-container {
+  padding: 128px 0 192px;
 }
 
-.card_info {
-  text-align: center;
+#home {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: radial-gradient(
+      30.56% 76.04% at 74.58% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../images/home/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png);
 }
-.card_info h2 {
-  font-family: "Sen";
+
+.home-container h4 {
   font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: -1px;
-  color: var(--blak-color);
-  margin-top: 20px;
-}
-.card_info p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 20px;
-  color: var(--grey-color);
-}
-.persons {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  gap: 16px;
-  display: flex;
-  cursor: pointer;
-  justify-content: center;
+  letter-spacing: 3px;
+  max-width: 222px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  color: var(--main-color);
 }
 
-/* end author section */
-
-/* join section */
-.join-section {
-  padding: 128px 0;
-  text-align: center;
-}
-.join-section h3 {
-  font-family: "Sen";
+.home-container h1 {
+  margin: 24px 0;
+  font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-  text-align: center;
+  font-size: 56px;
+  line-height: 64px;
+  color: var(--main-color);
+  max-width: 803px;
   letter-spacing: -2px;
-  color: var(--blak-color);
 }
-.join-section p {
-  font-family: "Inter";
+
+.home-container h5 {
+  font-style: normal;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--main-color);
+  font-family: "Inter", sans-serif;
+}
+
+.home-container h5 span {
+  color: var(--btn-color);
+}
+
+.home-container p {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  margin-top: 16px;
-  color: var(--grey-color);
+  margin-bottom: 48px;
+  max-width: 599px;
+  color: var(--main-color);
 }
-.join-section a {
-  display: inline-block;
-  font-family: "Sen";
+
+.btn button {
+  font-family: "Sen", sans-serif;
+  background: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  padding: 16px 48px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin-top: 32px;
   color: var(--blak-color);
-  background: var(--btn-color);
-  padding: 16px 48px;
+  transition: 0.5s;
 }
-.join-section a:hover {
-  background-color: var(--btn-hower-color);
-}
-/* end join section */
 
-/* responsivlik */
+/* --start blog section */
+
+
+
+.blog-item h1 {
+  margin-bottom: 32px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: var(--blak-color);
+}
+
+.blog-item a {
+  font-family: "Inter",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #592ea9;
+}
+
+.btn button:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+@media (min-width: 500px){
+  .blog-top {
+   padding-top: 128px;
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .blog-item a {
+    margin-top: 50px;
+  }
+
+  
+}
 
 @media (min-width: 720px) {
   /* --navbar -- */
@@ -274,5 +279,6 @@ nav {
     height: 100%;
     align-items: center;
   }
+
+  /* --End nvnbar-- */
 }
-/* --End nvnbar-- */
