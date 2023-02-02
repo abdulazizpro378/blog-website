@@ -144,11 +144,15 @@ nav {
 
 /* ---Start home section --  */
 
+main{
+  padding-top: 60px;
+}
 .home-container {
   padding: 128px 0 192px;
 }
 
 #home {
+ 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
