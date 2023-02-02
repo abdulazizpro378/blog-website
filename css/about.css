@@ -1,5 +1,9 @@
+/* fon-family link */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+/* css link */
 
 @import url(./common.css);
 
@@ -145,6 +149,28 @@ nav {
 }
 
 /* --End navbar-- */
+
+/* blog section */
+
+.blog-section {
+  padding: 128px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 64px;
+}
+.blog-left {
+}
+.bloog-left img:nth-child(1) {
+  position: relative;
+  max-width: 624px;
+  max-height: 480px;
+}
+.blog-left img:nth-child(2) {
+  position: absolute;
+  margin-left: 187px;
+  margin-top: 37px;
+}
+/* end blog section */
 
 /* author section */
 
