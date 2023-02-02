@@ -317,6 +317,104 @@ nav {
 }
 /* --All posts end-- */
 
+/* --start -contact-- */
+
+.contact-row {
+  margin-top: 48px;
+}
+.contact-top h1 {
+  font-family: "Sen", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 16px;
+  margin-bottom: 5px;
+  line-height: 48px;
+  color: #232536;
+}
+
+.contact-card {
+  border: 1px solid whitesmoke;
+  background-color: #ffffff;
+  padding: 32px;
+  max-width: 296px;
+  margin-bottom: 28px;
+  transition: 0.5s;
+}
+.contact-card:hover {
+  background: #ffd050;
+}
+
+.contact-card h1 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+
+  color: var(--blak-color);
+}
+
+.contact-card p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 232px;
+  margin-top: 4px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fbf6ea;
+  height: 48px;
+  border-radius: 10px;
+  width: 48px;
+}
+
+.card-img img {
+  max-width: 28px;
+  width: 100%;
+}
+
+/* ------ */
+
+.kirish-section {
+    display: flex;
+    justify-content: center;
+}
+
+.kirish-box {
+    padding: 100px 0px;
+    text-align: center;
+    max-width: 37%;
+}
+
+.kirish-section h4 {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: var(--blak-color);
+}
+
+.kirish-section p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--grey-color);
+}
+
+
+
 @media (min-width: 720px) {
   /* --navbar -- */
   #navbar-responsive {
@@ -333,7 +431,32 @@ nav {
     align-items: center;
   }
 
+  .contact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+  }
+
   /* --End navbar-- */
+}
+
+@media (min-width: 1250px) {
+  .contact-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 685px) {
+  .posts-cards {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .posts-card {
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -364,17 +487,12 @@ nav {
     margin-bottom: 50px;
     display: grid;
     grid-template-rows: 50% 50%;
-
-  
-
   }
-  
 
   .posts-right-card {
     order: 1;
     max-width: 100%;
-
-}
+  }
 
   .posts-left-card {
     order: 2;
@@ -385,37 +503,17 @@ nav {
     font-size: 16px;
     text-align: center;
   }
-  
+
   .posts-right-card h1 {
     font-size: 26px;
     line-height: 28px;
     text-align: center;
-
   }
-  
+
   .posts-right-card p {
     margin-top: 16px;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-
-
-  }
-}
-
-@media (max-width: 685px) {
-    
-  .posts-cards {
-    display: grid;
-    grid-template-columns: 100% ;
-  }
-
-  .posts-card {
-    margin-bottom: 0px;
-    display: grid;
-    grid-template-rows: 50% 50%;
-
-  
-
   }
 }
