@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+@import "./common.css";
+
+* {
+  font-family: "Sen", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --main-color: #ffffff;
+  --btn-color: #ffd050;
+  --blak-color: #232536;
+  --grey-color: #6d6e76;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* --start nabvab-- */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: var(--blak-color);
+}
+
+.nav-bar {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.navbar-shrink {
+  height: 65px;
+}
+.nav {
+  display: none;
+}
+
+.nav li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 12px;
+  line-height: 28px;
+  color: var(--main-color);
+  transition: 0.5s;
+}
+
+.nav li a:hover {
+  color: var(--btn-color);
+}
+
+.nav li button {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 16px 48px;
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  line-height: 24px;
+  color: var(--blak-color);
+  transition: 0.5s;
+}
+
+.nav li button:hover {
+  background-color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}
+
+#navbar-open i {
+  color: white;
+  font-size: 40px;
+}
+#navbar-open {
+  background-color: transparent;
+  border: none;
+}
+
+#navbar-responsive {
+  position: fixed;
+  top: 0px;
+  padding-top: 70px;
+  bottom: 0;
+  z-index: 10;
+  left: -100%;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#navbar-close {
+  background-color: transparent;
+  border: none;
+}
+#navbar-close i {
+  background-color: red;
+  font-size: 30px;
+  color: whitesmoke;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.respon .nav-link a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 12px;
+  line-height: 28px;
+  color: var(--blak-color);
+}
+
+.respon .nav-link button {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 16px 48px;
+  background: var(--blak-color);
+  border: 1px solid var(--main-color);
+  line-height: 24px;
+  border-radius: 10px;
+  color: var(--main-color);
+}
+
+.respon .nav-link {
+  padding: 20px;
+}
+
+/* --End navbar-- */
+
+/* ---Start home section --  */
+
+.home-container {
+  padding: 128px 0 192px;
+}
+
+#home {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: radial-gradient(
+      30.56% 76.04% at 74.58% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../images/home/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png);
+}
+
+.home-container h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  max-width: 222px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.home-container h1 {
+  margin: 24px 0;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: var(--main-color);
+  max-width: 803px;
+  letter-spacing: -2px;
+}
+
+.home-container h5 {
+  font-style: normal;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--main-color);
+  font-family: "Inter", sans-serif;
+}
+
+.home-container h5 span {
+  color: var(--btn-color);
+}
+
+.home-container p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 48px;
+  max-width: 599px;
+  color: var(--main-color);
+}
+
+.btn button {
+  font-family: "Sen", sans-serif;
+  background: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  padding: 16px 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--blak-color);
+  transition: 0.5s;
+}
+
+/* --start blog section */
+
+
+
+.blog-item h1 {
+  margin-bottom: 32px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: var(--blak-color);
+}
+
+.blog-item a {
+  font-family: "Inter",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #592ea9;
+}
+
+.btn button:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+@media (min-width: 500px){
+  .blog-top {
+   padding-top: 128px;
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .blog-item a {
+    margin-top: 50px;
+  }
+
+  
+}
+
+@media (min-width: 720px) {
+  /* --navbar -- */
+  #navbar-responsive {
+    display: none;
+  }
+
+  #navbar-open {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  /* --End nvnbar-- */
+}
