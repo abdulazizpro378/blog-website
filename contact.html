@@ -4,9 +4,137 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finsweet</title>
+    <title>Homework 18</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link />
   </head>
   <body>
-    
+    <!-- start navbar -->
+
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav-bar" id="navbar">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/home/logo.png" alt="logo" />
+              </a>
+            </div>
+
+            <ul class="nav">
+              <li>
+                <a href="#" class="active">Home</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+              <li>
+                <button>Subscribe</button>
+              </li>
+            </ul>
+
+            <button id="navbar-open">
+              <i class="uil uil-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div id="navbar-responsive">
+        <ul class="respon">
+          <li class="nav-link">
+            <a href="#" class="active">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Blog</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">About Us</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Contact us</a>
+          </li>
+          <li class="nav-link">
+            <button>Subscribe</button>
+          </li>
+        </ul>
+        <button id="navbar-close">
+          <i class="uil uil-multiply"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- End  navbar  -->
+
+    <!-- contact-main-start -->
+    <main>
+      <section id="contact-us">
+        <div class="container contact">
+          <div class="contact-content">
+            <h4>Contact us</h4>
+            <h1>Let’s Start a Conversation</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim.
+            </p>
+          </div>
+
+          <div class="working-time">
+            <div class="left-right">
+              <div class="right">
+                <h3>Working hours</h3>
+                <div class="line"></div>
+                <h2>Monday To Friday</h2>
+                <h4>9:00 AM to 8:00 PM</h4>
+                <p>Our Support Team is available 24/7</p>
+              </div>
+
+              <div class="left">
+                <h3>Contact Us</h3>
+                <div class="line"></div>
+                <h2>020 7993 2905</h2>
+                <p>hello@finsweet.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="information">
+            <form action="">
+              <input class="text"
+                type="text"
+                name="full-name"
+                id="name"
+                required
+                placeholder="Full Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+              />
+              <select name="query" id="query">
+                <option value="0">Query Related</option>
+              </select>
+              <input type="text" name="text" id="text" placeholder="Message" />
+              <button><a href="#">Send Message</a></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
