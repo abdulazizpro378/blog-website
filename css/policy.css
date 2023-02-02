@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.span h1 {
+    font-family: 'Sen';
+    font-style: normal;
+    padding-top: 80px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #232536;
+}
+
+.span p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #232536;
+    opacity: 0.6;
+}
+
+nav {
+    background: #F4F0F8;
+    padding-bottom: 80px;
+}
+
+.gol h1 {
+    font-family: 'Sen';
+    font-style: normal;
+    margin: 0 auto;
+    margin-top: 128px;
+    max-width: 716px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+}
+
+.pol p {
+    font-family: 'Inter';
+    font-style: normal;
+    padding-top: 32px;
+    max-width: 768px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4C4C4C;
+}
+
+.hol h1 {
+    font-family: 'Sen';
+    font-style: normal;
+    margin: 0 auto;
+    margin-top: 32px;
+    max-width: 714px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+}

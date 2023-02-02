@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.pubg h1 {
+    font-family: 'Sen';
+    font-style: normal;
+    margin-top: 130px;
+    margin-left: 32px;
+    max-width: 669px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -2px;
+    color: #232536;
+}
+
+.pubg p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 32px;
+    font-size: 16px;
+    margin-top: 24px;
+    line-height: 28px;
+    max-width: 645px;
+    display: flex;
+    align-items: center;
+    color: #6D6E76;
+}
+
+.logo-chat img {
+    padding: 5px;
+}
+
+.box-3 {
+    display: flex;
+}
+
+.logo-chat {
+    margin-left: 32px;
+    margin-top: 24px;
+}
+
+.logo img {
+    margin-left: 208px;
+    margin-top: 128px;
+}
+
+nav {
+    background: #F4F0F8;
+}
+
+.logo-csrd {
+    margin-left: 208px;
+    margin-top: 104px;
+}
+
+.rem p {
+    font-family: 'Inter';
+    font-style: normal;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 580px;
+    color: #6D6E76;
+}
+
+.rem h1 {
+    font-family: 'Sen';
+    font-style: normal;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    max-width: 560px;
+    letter-spacing: -2px;
+    color: #232536;
+}
+
+.rem h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #592EA9;
+}
+
+.rem {
+    margin-left: 32px;
+}
+
+.card-1,
+.box-2 {
+    display: flex;
+    margin-top: 64px;
+}
+
+.vali h1 {
+    font-family: 'Sen';
+    margin-left: 208px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    margin-top: 128px;
+    letter-spacing: -2px;
+    color: #232536;
+}
+
+.box {
+    margin-left: 208px;
+}
+
