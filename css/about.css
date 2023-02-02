@@ -1,5 +1,9 @@
+/* fon-family link */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+/* css link */
 
 @import url(./common.css);
 
@@ -11,6 +15,7 @@
 :root {
   --main-color: #ffffff;
   --red-color: red;
+  --dark-grey: #4c4c4c;
   --btn-color: #ffd050;
   --btn-hower-color: #edc14a;
   --blak-color: #232536;
@@ -24,7 +29,7 @@ ul {
   list-style-type: none;
 }
 
-/* --start nabvab-- */
+/* --start navbar-- */
 
 nav {
   position: fixed;
@@ -145,6 +150,225 @@ nav {
 }
 
 /* --End navbar-- */
+
+/* about section start */
+.about-section {
+  padding-top: 160px;
+  display: flex;
+}
+.about-left {
+  padding: 64px;
+  background-color: pink;
+}
+.about-left h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blak-color);
+}
+.about-left h4 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  margin-top: 16px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: var(--blak-color);
+}
+.about-right {
+  background-color: green;
+}
+.about-right p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 102px;
+  margin-left: 32px;
+  color: var(--dark-grey);
+}
+/* end about section */
+
+/* follow section */
+.follow-img {
+  width: 100%;
+}
+.follow-number ul {
+  display: block;
+  display: flex;
+  background-color: var(--btn-color);
+  padding: 32px;
+}
+.follow-number ul > li {
+}
+.follow-number ul > li > h3 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -2px;
+  color: var(--blak-color);
+}
+.follow-number ul > li > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--blak-color);
+}
+
+/* end follow section */
+
+/* MISSION SECTION */
+.mision-section {
+  display: flex;
+  padding: 128px 108px 64px 108px;
+  background-color: #f4f0f8;
+}
+.mision-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blak-color);
+}
+.mision-title-text {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: var(--blak-color);
+  margin-top: 24px;
+}
+.mision-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 16px;
+  color: var(--grey-color);
+}
+.mision-right {
+  margin-left: 32px;
+}
+
+/* END MISSION SECTION */
+
+/* creativ section */
+.creativ-section {
+  padding-top: 128px;
+  display: flex;
+}
+.creativ-left h3 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: var(--blak-color);
+  margin-top: 85px;
+}
+.creativ-left h4 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 16px;
+  line-height: 32px;
+  color: var(--blak-color);
+}
+.creativ-left p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 16px;
+  color: var(--blak-color);
+}
+.creativ-right {
+  max-width: 624px;
+  max-height: 480px;
+  margin-left: 137px;
+}
+.creativ-right img:nth-child(1) {
+  max-width: 624px;
+}
+.creativ-right img:nth-child(2) {
+  position: relative;
+  left: -57px;
+  bottom: 360px;
+  width: 103px;
+  height: 116px;
+}
+/*end creativ section */
+/* blog section */
+
+.blog-section {
+  padding-top: 128px;
+  display: flex;
+}
+.blog-left {
+  max-width: 624px;
+  max-height: 480px;
+}
+.bloog-left img:nth-child(1) {
+  max-width: 624px;
+}
+.blog-left img:nth-child(2) {
+  position: relative;
+  top: -37px;
+  left: 107px;
+}
+.blog-right {
+  padding-top: 82px;
+  margin-left: 64px;
+}
+.blog-right h3 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: var(--blak-color);
+}
+.blog-right h4 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 16px;
+  color: var(--blak-color);
+}
+.blog-right p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 28px;
+  color: var(--blak-color);
+}
+/* end blog section */
 
 /* author section */
 
