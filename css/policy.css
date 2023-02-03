@@ -77,3 +77,79 @@ nav {
     letter-spacing: -2px;
     color: #232536;
 }
+
+a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.box-5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#foter-up {
+    margin-top: 128px;
+    padding: 59px 80px 0px 80px;
+    background: #232536;
+}
+
+.form h1 {
+    font-family: 'Sen';
+    font-style: normal;
+    margin-top: 20px;
+    max-width: 562px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+}
+
+.btn {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #232536;
+    background: #FFD050;
+    padding: 16px 48px;
+    border: #FFD050;
+}
+
+.input {
+    padding: 14px 162px 14px 24px;
+    background: #FFFFFF;
+    opacity: 0.05;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    border: #F4F0F8;
+    color: #FFFFFF;
+}
+
+.inpu {
+    display: flex;
+    grid-gap: 24px;
+}
+
+.box-6 {
+    display: flex;
+    justify-content: space-between;
+}
