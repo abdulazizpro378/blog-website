@@ -12,8 +12,66 @@
 <body>
     <header>
         <nav>
+          <div class="container">
+            <div class="nav-bar" id="navbar">
+              <div class="logo">
+                <a href="#">
+                  <img src="./images/home/logo.png" alt="logo" />
+                </a>
+              </div>
+  
+              <ul class="nav">
+                <li>
+                  <a href="./index.html" class="active">Home</a>
+                </li>
+                <li>
+                  <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="./about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./contact.html">Contact us</a>
+                </li>
+                <li>
+                  <button>Subscribe</button>
+                </li>
+              </ul>
+  
+              <button id="navbar-open">
+                <i class="uil uil-bars"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+  
+        <div id="navbar-responsive">
+          <ul class="respon">
+            <li class="nav-link">
+              <a href="#" class="active">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-link">
+              <a href="./about.html">About Us</a>
+            </li>
+            <li class="nav-link">
+              <a href="./contact.html">Contact us</a>
+            </li>
+            <li class="nav-link">
+              <button>Subscribe</button>
+            </li>
+          </ul>
+          <button id="navbar-close">
+            <i class="uil uil-multiply"></i>
+          </button>
+        </div>
+      </header>
+    <section>
+        <div class="boko">
             <div class="container box-3">
-                <div class="logo">
+                <div class="free">
                     <img src="./images/author/peaple .png" alt="">
                 </div>
                 <div class="pubg">
@@ -32,7 +90,7 @@
             <div class="logo-csrd">
                 <img src="./images/author/Pattern.png" alt="">
             </div>
-        </nav>
+        </div>
 
     <main>
         <section>
@@ -68,6 +126,7 @@
             </div>
         </section>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
