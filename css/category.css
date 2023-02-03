@@ -1,1 +1,434 @@
-@import url(./about.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+@import url(./common.css);
+
+* {
+  font-family: "Sen", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --main-color: #ffffff;
+  --btn-color: #ffd050;
+  --blak-color: #232536;
+  --grey-color: #6d6e76;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* --start nabvab-- */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: var(--blak-color);
+}
+
+.nav-bar {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.navbar-shrink {
+  height: 65px;
+}
+.nav {
+  display: none;
+}
+
+.nav li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 12px;
+  line-height: 28px;
+  color: var(--main-color);
+  transition: 0.5s;
+}
+
+.nav li a:hover {
+  color: var(--btn-color);
+}
+
+.nav li button {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 16px 48px;
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  line-height: 24px;
+  color: var(--blak-color);
+  transition: 0.5s;
+}
+
+.nav li button:hover {
+  background-color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}
+
+#navbar-open i {
+  color: white;
+  font-size: 40px;
+}
+#navbar-open {
+  background-color: transparent;
+  border: none;
+}
+
+#navbar-responsive {
+  position: fixed;
+  top: 0px;
+  padding-top: 70px;
+  bottom: 0;
+  z-index: 10;
+  left: -100%;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#navbar-close {
+  background-color: transparent;
+  border: none;
+}
+#navbar-close i {
+  background-color: red;
+  font-size: 30px;
+  color: whitesmoke;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.respon .nav-link a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 12px;
+  line-height: 28px;
+  color: var(--blak-color);
+}
+
+.respon .nav-link button {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 16px 48px;
+  background: var(--blak-color);
+  border: 1px solid var(--main-color);
+  line-height: 24px;
+  border-radius: 10px;
+  color: var(--main-color);
+}
+
+.respon .nav-link {
+  padding: 20px;
+}
+
+/* --End navbar-- */
+
+/*-- bussiness start --*/
+.bussiness-container {
+  max-width: 100%;
+  background: #f4f0f8;
+}
+
+.bussiness {
+  text-align: center;
+  padding: 150px 0 80px 0;
+}
+
+.bussiness h1 {
+  min-width: 421px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #232536;
+}
+
+.bussiness p {
+  min-width: 515px;
+  padding: 16px 0 30px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+
+.bussiness h5 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #232536;
+  cursor: pointer;
+}
+/*-- bussiness end --*/
+
+/*-- card category start --*/
+.left-right {
+  display: flex;
+  justify-content: space-between;
+  padding: 128px 0;
+}
+.person-card {
+  /* max-width: 524px; */
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 32px;
+  margin: 32px;
+}
+
+.person-card-img img {
+  max-width: 100%;
+}
+
+.person-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.person-card-content h3 {
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #592ea9;
+}
+
+.person-card-content h1 {
+  padding: 15px;
+  max-width: 512px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+}
+
+.person-card-content p {
+  padding: 15px;
+  max-width: 512px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+
+.right-info {
+  width: 296px;
+  height: 96px;
+  margin: 24px;
+  display: flex;
+  align-items: center;
+  /* background: #ffd050; */
+  border: 1.5px solid #c1c1c3;
+}
+
+.right-info:hover {
+  background: #ffd050;
+  border: transparent;
+  transition: 0.8s;
+}
+
+.right-info .right-img {
+  width: 48px;
+  margin-left: 24px;
+  height: 48px;
+  background: #fbf6ea;
+}
+
+.right-img img {
+  padding: 10px;
+}
+
+.right-info h2 {
+  margin-left: 15px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #232536;
+}
+
+.intro h1 {
+  margin-bottom: 10px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+}
+
+.buttons {
+  margin-left: 25px;
+}
+
+.button button:hover {
+  background: #ffd050;
+  border: transparent;
+  transition: 0.8s;
+}
+
+.b1 {
+  width: 133px;
+  height: 48px;
+  border: 2px solid #6d6e76;
+  border-radius: 28px;
+}
+
+.b2 {
+  width: 148px;
+  height: 48px;
+  border: 2px solid #6d6e76;
+  border-radius: 28px;
+}
+
+.b3 {
+  margin-top: 15px;
+  width: 101px;
+  height: 48px;
+  border: 2px solid #6d6e76;
+  border-radius: 28px;
+}
+
+.b4 {
+  width: 181px;
+  height: 48px;
+  border: 2px solid #6d6e76;
+  border-radius: 28px;
+}
+
+.b5 {
+  margin-top: 15px;
+  width: 178px;
+  height: 48px;
+  border: 2px solid #6d6e76;
+  border-radius: 28px;
+}
+
+.b6 {
+  width: 104px;
+  height: 48px;
+  border: 2px solid #6d6e76;
+  border-radius: 28px;
+}
+
+.button a {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px;
+  color: #232536;
+}
+
+/*-- card category end --*/
+
+/*-- responsive --*/
+
+@media (max-width: 950px) {
+  .left-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .bussiness p {
+    min-width: 250px;
+  }
+
+  .bussiness h1 {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 370px) {
+  .right-info {
+    width: 200px;
+    align-items: center;
+  }
+
+  .right-info h2 {
+    font-size: 16px;
+  }
+
+  .right .button {
+    display: grid;
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 720px) {
+  /* --navbar -- */
+  #navbar-responsive {
+    display: none;
+  }
+
+  #navbar-open {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  /* --End nvnbar-- */
+}

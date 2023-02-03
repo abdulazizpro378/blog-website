@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+@import url(./common.css);
+
+* {
+  font-family: "Sen", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --main-color: #ffffff;
+  --btn-color: #ffd050;
+  --blak-color: #232536;
+  --grey-color: #6d6e76;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* --start nabvab-- */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: var(--blak-color);
+}
+
+.nav-bar {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.navbar-shrink {
+  height: 65px;
+}
+.nav {
+  display: none;
+}
+
+.nav li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 12px;
+  line-height: 28px;
+  color: var(--main-color);
+  transition: 0.5s;
+}
+
+.nav li a:hover {
+  color: var(--btn-color);
+}
+
+.nav li button {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 16px 48px;
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  line-height: 24px;
+  color: var(--blak-color);
+  transition: 0.5s;
+}
+
+.nav li button:hover {
+  background-color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}
+
+#navbar-open i {
+  color: white;
+  font-size: 40px;
+}
+#navbar-open {
+  background-color: transparent;
+  border: none;
+}
+
+#navbar-responsive {
+  position: fixed;
+  top: 0px;
+  padding-top: 70px;
+  bottom: 0;
+  z-index: 10;
+  left: -100%;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#navbar-close {
+  background-color: transparent;
+  border: none;
+}
+#navbar-close i {
+  background-color: red;
+  font-size: 30px;
+  color: whitesmoke;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.respon .nav-link a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 12px;
+  line-height: 28px;
+  color: var(--blak-color);
+}
+
+.respon .nav-link button {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 16px 48px;
+  background: var(--blak-color);
+  border: 1px solid var(--main-color);
+  line-height: 24px;
+  border-radius: 10px;
+  color: var(--main-color);
+}
+
+.respon .nav-link {
+  padding: 20px;
+}
+
+/* --End navbar-- */
+
+/*-- contact-main-start --*/
+.contact {
+  max-width: 786px;
+  padding-top: 150px;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-content h4 {
+  padding: 12px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #232536;
+}
+
+.contact-content h1 {
+  padding: 12px 0;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #232536;
+}
+
+.contact-content p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+
+/*-- contact-main-end --*/
+
+/*-- working time --*/
+
+.working-time {
+  padding: 50px 0 30px 0;
+}
+
+.right {
+  padding: 15px 0 15px 70px;
+}
+
+.left {
+  padding: 15px 80px 0 0;
+}
+
+.left-right {
+  display: flex;
+  justify-content: space-between;
+  background: #592ea9;
+  max-width: 768px;
+  /* align-items: center; */
+}
+
+.left-right h3 {
+  padding: 16px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.left-right h2 {
+  padding: 16px 0;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.left-right h4 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.left-right .line {
+  max-width: 294px;
+  background: #ffffff;
+  opacity: 0.1;
+  border: 1px solid #ffffff;
+}
+
+.left .line {
+  min-width: 294px;
+  background: #ffffff;
+  opacity: 0.1;
+  border: 1px solid #ffffff;
+}
+
+.left-right p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+/*-- wirking time --*/
+
+/*-- information start --*/
+.information form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+}
+
+form input {
+  max-width: 768px;
+  height: 56px;
+  padding-left: 25px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  border-radius: 2px;
+}
+
+form select {
+  max-width: 768px;
+  height: 56px;
+  padding-left: 25px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  border-radius: 2px;
+}
+
+form #text {
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  border-radius: 2px;
+  max-width: 768px;
+  height: 100px;
+}
+
+form button {
+  max-width: 768px;
+  height: 56px;
+  background: #ffd050;
+  border: transparent;
+}
+
+form button a {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #232536;
+}
+/*-- information end --*/
+
+/*-- responsive start --*/
+@media (max-width: 700px) {
+  .left-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .left-right .right {
+    padding-left: 30px;
+    text-align: center;
+  }
+
+  .left-right .left {
+    padding-left: 100px;
+    text-align: center;
+  }
+
+  .right .line {
+    display: none;
+  }
+
+  .left .line {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  /* --navbar -- */
+  #navbar-responsive {
+    display: none;
+  }
+
+  #navbar-open {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  /* --End nvnbar-- */
+}
