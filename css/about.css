@@ -624,9 +624,10 @@ color: var(--main-color);
 
 
 @media(min-width:600px){
-	.footer-bottom{
-		flex-direction: inherit;
-	}
+	
+  .footer-bottom {
+    flex-direction: inherit;
+  }
 }
 
 
@@ -769,9 +770,7 @@ footer {
 }
 
 @media (min-width: 600px) {
-  .footer-bottom {
-    flex-direction: inherit;
-  }
+  
 }
 
 @media (min-width: 650px) {
