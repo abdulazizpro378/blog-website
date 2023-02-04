@@ -191,6 +191,7 @@ nav {
   justify-content: space-between;
   padding: 128px 0;
 }
+
 .person-card {
   /* max-width: 524px; */
   display: grid;
@@ -358,6 +359,124 @@ nav {
 
 /*-- card category end --*/
 
+/* ---start footer--- */
+
+footer {
+  background-color: var(--blak-color);
+}
+
+.footerlinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footerlinks a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+}
+
+.footerlinks a:hover {
+  text-decoration: underline;
+}
+
+.footertop img {
+  max-width: 140px;
+}
+
+.footertop {
+  padding: 60px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-subscribe {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.059);
+  padding: 80px 64px;
+}
+
+.footer-subscribe h2 {
+  max-width: 562px;
+  font-family: "Sen";
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-form input {
+  font-family: "Inter";
+  min-width: 100px;
+  max-width: 323px;
+  border: 1px solid #4c4c4c;
+  padding: 14px 20px;
+  background-color: transparent;
+  color: var(--dark-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer-form button {
+  font-family: "Sen";
+  border: none;
+  padding: 16px 48px;
+  background-color: var(--btn-color);
+  color: var(--blak-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-form button:hover {
+  background-color: var(--main-color);
+}
+
+.footer-bottom {
+  padding: 48px 0 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-bottom-left p {
+  font-family: "Inter";
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 26px;
+}
+
+.footer-bottom-right img {
+  width: 16px;
+  height: 16px;
+}
 /*-- responsive --*/
 
 @media (max-width: 950px) {
@@ -395,6 +514,11 @@ nav {
 
   .bussiness h1 {
     min-width: 100px;
+  }
+
+  .footertop {
+    display: flex;
+    flex-direction: column;
   }
 }
 
